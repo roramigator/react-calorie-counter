@@ -1,7 +1,6 @@
 import './App.css';
 
-import AppBar from '@mui/material/AppBar';
-import { Toolbar, IconButton, Typography } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
 import { DeleteForever, AddBox } from '@mui/icons-material';
 
 function App() {
