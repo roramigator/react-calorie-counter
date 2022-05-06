@@ -32,7 +32,13 @@ const localStorageControl = (() => {
     remove: (item: Titem) => {
       const items = getFromLS();
       items.splice(item.id, 1);
-      setToLS(items);
+
+      const sortItems = items.map((item: Titem, index: number) => {
+        item.id = index;
+        return item;
+      });
+
+      setToLS(sortItems);
     },
     clear: () => {
       localStorage.removeItem(LS);
