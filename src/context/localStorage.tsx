@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react';
 
-type Titem = { id: number; name: string; calories: number };
+type Titem = { id: number; name: string; calories: number | string };
 
 const localStorageControl = (() => {
   const LS = 'items';
